@@ -1,0 +1,61 @@
+
+
+cd /data/ogle/AgNACP/Kens_version_longterm/A_Global_sites/1A_rothamsted/broadbalk/DD15centEVI
+
+
+ cp equil_outfiles.in outfiles.in
+/data/paustian/Century/bin/DD15centEVI -s broadbalk_eq -n broadbalk_eq
+/data/paustian/Century/bin/DD15centEVI -s broadbalk_base -n broadbalk_base -e broadbalk_eq
+
+ cp exp_outfiles.in outfiles.in
+/data/paustian/Century/bin/DD15centEVI -s broadbalk_WWW_FYM1+straw -n broadbalk_WWW_FYM1+straw -e broadbalk_base
+mv harvest.csv broadbalk_WWW_FYM1+straw_harvest.csv
+/data/paustian/Century/bin/DD15centEVI -s broadbalk_WWW_FYM1-straw -n broadbalk_WWW_FYM1-straw -e broadbalk_base
+mv harvest.csv broadbalk_WWW_FYM1-straw_harvest.csv
+/data/paustian/Century/bin/DD15centEVI -s broadbalk_WWW_FYM2+straw -n broadbalk_WWW_FYM2+straw -e broadbalk_base
+mv harvest.csv broadbalk_WWW_FYM2+straw_harvest.csv
+/data/paustian/Century/bin/DD15centEVI -s broadbalk_WWW_FYM2-straw -n broadbalk_WWW_FYM2-straw -e broadbalk_base
+mv harvest.csv broadbalk_WWW_FYM2-straw_harvest.csv
+/data/paustian/Century/bin/DD15centEVI -s broadbalk_WWW_N0-straw -n broadbalk_WWW_N0-straw -e broadbalk_base
+mv harvest.csv broadbalk_WWW_N0-straw_harvest.csv
+/data/paustian/Century/bin/DD15centEVI -s broadbalk_WWW_N0+straw -n broadbalk_WWW_N0+straw -e broadbalk_base
+mv harvest.csv broadbalk_WWW_N0+straw_harvest.csv
+/data/paustian/Century/bin/DD15centEVI -s broadbalk_WWW_N1+straw -n broadbalk_WWW_N1+straw -e broadbalk_base
+mv harvest.csv broadbalk_WWW_N1+straw_harvest.csv
+/data/paustian/Century/bin/DD15centEVI -s broadbalk_WWW_N1-straw -n broadbalk_WWW_N1-straw -e broadbalk_base
+mv harvest.csv broadbalk_WWW_N1-straw_harvest.csv
+/data/paustian/Century/bin/DD15centEVI -s broadbalk_WWW_N2+straw -n broadbalk_WWW_N2+straw -e broadbalk_base
+mv harvest.csv broadbalk_WWW_N2+straw_harvest.csv
+/data/paustian/Century/bin/DD15centEVI -s broadbalk_WWW_N2-straw -n broadbalk_WWW_N2-straw -e broadbalk_base
+mv harvest.csv broadbalk_WWW_N2-straw_harvest.csv
+/data/paustian/Century/bin/DD15centEVI -s broadbalk_WWW_N3+straw -n broadbalk_WWW_N3+straw -e broadbalk_base
+mv harvest.csv broadbalk_WWW_N3+straw_harvest.csv
+/data/paustian/Century/bin/DD15centEVI -s broadbalk_WWW_N3-straw -n broadbalk_WWW_N3-straw -e broadbalk_base
+mv harvest.csv broadbalk_WWW_N3-straw_harvest.csv
+
+/data/paustian/Century/bin/DD15list100 broadbalk_WWW_FYM1+straw broadbalk_WWW_FYM1+straw -c outvars.txt
+/data/paustian/Century/bin/DD15list100 broadbalk_WWW_FYM1-straw broadbalk_WWW_FYM1-straw -c outvars.txt
+/data/paustian/Century/bin/DD15list100 broadbalk_WWW_FYM2+straw broadbalk_WWW_FYM2+straw -c outvars.txt
+/data/paustian/Century/bin/DD15list100 broadbalk_WWW_FYM2-straw broadbalk_WWW_FYM2-straw -c outvars.txt
+/data/paustian/Century/bin/DD15list100 broadbalk_WWW_N0-straw broadbalk_WWW_N0-straw -c outvars.txt
+/data/paustian/Century/bin/DD15list100 broadbalk_WWW_N0+straw broadbalk_WWW_N0+straw -c outvars.txt
+/data/paustian/Century/bin/DD15list100 broadbalk_WWW_N1+straw broadbalk_WWW_N1+straw -c outvars.txt
+/data/paustian/Century/bin/DD15list100 broadbalk_WWW_N1-straw broadbalk_WWW_N1-straw -c outvars.txt
+/data/paustian/Century/bin/DD15list100 broadbalk_WWW_N2+straw broadbalk_WWW_N2+straw -c outvars.txt
+/data/paustian/Century/bin/DD15list100 broadbalk_WWW_N2-straw broadbalk_WWW_N2-straw -c outvars.txt
+/data/paustian/Century/bin/DD15list100 broadbalk_WWW_N3+straw broadbalk_WWW_N3+straw -c outvars.txt
+/data/paustian/Century/bin/DD15list100 broadbalk_WWW_N3-straw broadbalk_WWW_N3-straw -c outvars.txt
+
+
+/data/paustian/Century/bin/DD15centEVI -s broadbalk_WWW_grass -n broadbalk_WWW_grass -e broadbalk_base
+/data/paustian/Century/bin/DD15centEVI -s broadbalk_WWW_forest -n broadbalk_WWW_forest -e broadbalk_base
+/data/paustian/Century/bin/DD15centEVI -s broadbalk_BF -n broadbalk_BF -e broadbalk_base
+
+/data/paustian/Century/bin/DD15list100 broadbalk_WWW_grass broadbalk_WWW_grass -c outvars.txt
+/data/paustian/Century/bin/DD15list100 broadbalk_WWW_forest broadbalk_WWW_forest -c outvars.txt
+/data/paustian/Century/bin/DD15list100 broadbalk_BF broadbalk_BF -c outvars.txt
+
+/data/paustian/Century/bin/DD15centEVI -s broadbalk_tree_eq -n broadbalk_tree_eq
+/data/paustian/Century/bin/DD15list100 broadbalk_tree_eq broadbalk_tree_eq -c outvars.txt
+
+/data/paustian/Century/bin/DD15list100 broadbalk_eq broadbalk_eq -c outvars.txt

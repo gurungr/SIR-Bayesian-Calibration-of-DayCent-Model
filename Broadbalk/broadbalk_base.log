@@ -1,0 +1,44 @@
+replacement site file: broadbalk_eq.dsa
+Writing output to binary file broadbalk_base.bin
+new binary: broadbalk_base.bin
+reading site: broadbalk_eq.dsa
+FIX OPTION: xefcltef = 0.1645
+temp adjusted cultivation effects
+FIX OPTION: maxcltef = 10.53
+FIX OPTION: fldn2d = -1
+FIX OPTION: fln2or = 100.0
+FIX OPTION: co2ch4 = 0.50
+FIX OPTION: mxch4f = 0.65
+FIX OPTION: frexud = 0.55
+FIX OPTION: aeh = 0.23
+FIX OPTION: deh = 0.16
+FIX OPTION: behfl = -250.
+FIX OPTION: behdr = 300.
+FIX OPTION: methzr = 0.7
+FIX OPTION: wfdryt = 14
+using interacting cultivations
+sitepar NOTE: ignoring unused soil boundary temperature values: tbotmn, tbotmx
+sitepar NOTE: ignoring unused soil boundary temperature value: timlag
+WARNING: Unknown sitepar record: -1         / flood_N2toN2O     - N2/N2O ratio for flooded state (-1 nonflood; 100.0 for flooded rice)
+WARNING: Unknown sitepar record: 0.15       / CO2_to_CH4        - fraction of CO2 from soil respiration used to produce CH4
+WARNING: Unknown sitepar record: 0.5        / C6H12O6_to_CH4    - reaction of anaerobic carbohydrate fermentation with methanogenesis (mole weight C6H12O6 to CH4)
+WARNING: Unknown sitepar record: 0.45       / frac_to_exudates  - fraction of root production that is root exudates
+WARNING: Unknown sitepar record: 0.23       / Aeh               - differential coefficient (Aeh) default 0.23
+WARNING: Unknown sitepar record: 0.16       / Deh               - differential coefficient (Deh) default 0.16
+WARNING: Unknown sitepar record: -250.0     / Beh_flood         - low-limit value for Eh during flooding course (mv)
+WARNING: Unknown sitepar record: 300.0      / Beh_drain         - upper-limit value of Eh during drainage course (mv)
+WARNING: Unknown sitepar record: 0.7        / zero_root_frac    - fraction CH4 emitted via bubbles when zero root biomass (0.0-1.0)
+reading v17 record        1:broadbalk_eq.dsa
+swflag = 0
+Tminan= 0.016100  Tmaxan= 21.186001  Tamp= 21.169901
+ Setting soil profile to Tavean= 9.063558
+   Model is running... 18:24:46.969
+Opened weather file: roth.wth
+           5 Monthly Events in Block            1
+ Using only air temp for PET calc
+SnowFlag = 1;  snow insulation, around basetemp
+EOF on weather file reading 1782; rewinding to 1	1	1931	1	
+Opened weather file: roth.wth
+          26 Monthly Events in Block            1
+writing v17 record        1  label 'broadbalk_base.sch<-broadbalk_eq.sch<-br' : broadbalk_base.dsa
+Execution success. 8.710 s

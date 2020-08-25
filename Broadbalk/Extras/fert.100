@@ -1,0 +1,9 @@
+0.4N Nitrogen_addition_for_(0.4N)      
+0.4               'FERAMT(1)'
+0.00              'FERAMT(2)'
+0.00              'FERAMT(3)'
+0.00              'AUFERT' 
+1.00              'NINHIB' 
+7.00              'NINHTM'
+0.75              'FRAC_NH4'
+0.25              'FRAC_NO3'

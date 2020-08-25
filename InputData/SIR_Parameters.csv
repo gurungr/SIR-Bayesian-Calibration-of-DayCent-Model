@@ -1,0 +1,10 @@
+Parameters,Default,Lower,Upper,Distribution,Definitions
+'DEC4',0.0025,0.001,0.005,uniform,maximum decomposition rate of soil organic matter with slow turnover (aka passive pool)
+'DEC5(2)',0.12,0.07,0.25,uniform,maximum decomposition rate of soil organic matter with intermediate turnover (aka slow pool)
+'P2CO2(2)',0.55,0.5,0.8,uniform,controls flow from soil organic matter with intermediate turnover to CO2 (fraction of C lost as CO2 during decomposition)
+'PMCO2(2)',0.55,0.35,0.7,uniform,controls flow from soil metabolic to CO2 (fraction of C lost as CO2 during decomposition)
+'PS1S3(2)',0.032,0.02,0.06,uniform,slope for the effect of clay on the control for the flow from soil organic matter with fast turnover to SOM with slow turnover (fraction of C from SOM1C to SOM3C)
+'TEFF(1)',14,5,30,uniform,x location of inflection point used in equation for computing the temperature effect on decomposition
+'TEFF(2)',0.15,0.05,0.3,uniform,slope of line at inflection point
+'WEFF(2)',9,6,15,uniform,moisture effect parameter on decomposition (when IDEF = 1)
+Till_Eff,10,5,15,uniform,"Tillage Multiplyer on decomposition (som1, som2, and structural pools only) (Maximum Multiplyer i.e. CULT K)"

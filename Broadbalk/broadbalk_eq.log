@@ -1,0 +1,60 @@
+Writing output to binary file broadbalk_eq.bin
+new binary: broadbalk_eq.bin
+reading site: broadbalk.100
+FIX OPTION: xefcltef = 0.1645
+temp adjusted cultivation effects
+FIX OPTION: maxcltef = 10.53
+FIX OPTION: fldn2d = -1
+FIX OPTION: fln2or = 100.0
+FIX OPTION: co2ch4 = 0.50
+FIX OPTION: mxch4f = 0.65
+FIX OPTION: frexud = 0.55
+FIX OPTION: aeh = 0.23
+FIX OPTION: deh = 0.16
+FIX OPTION: behfl = -250.
+FIX OPTION: behdr = 300.
+FIX OPTION: methzr = 0.7
+FIX OPTION: wfdryt = 14
+using interacting cultivations
+sitepar NOTE: ignoring unused soil boundary temperature values: tbotmn, tbotmx
+sitepar NOTE: ignoring unused soil boundary temperature value: timlag
+WARNING: Unknown sitepar record: -1         / flood_N2toN2O     - N2/N2O ratio for flooded state (-1 nonflood; 100.0 for flooded rice)
+WARNING: Unknown sitepar record: 0.15       / CO2_to_CH4        - fraction of CO2 from soil respiration used to produce CH4
+WARNING: Unknown sitepar record: 0.5        / C6H12O6_to_CH4    - reaction of anaerobic carbohydrate fermentation with methanogenesis (mole weight C6H12O6 to CH4)
+WARNING: Unknown sitepar record: 0.45       / frac_to_exudates  - fraction of root production that is root exudates
+WARNING: Unknown sitepar record: 0.23       / Aeh               - differential coefficient (Aeh) default 0.23
+WARNING: Unknown sitepar record: 0.16       / Deh               - differential coefficient (Deh) default 0.16
+WARNING: Unknown sitepar record: -250.0     / Beh_flood         - low-limit value for Eh during flooding course (mv)
+WARNING: Unknown sitepar record: 300.0      / Beh_drain         - upper-limit value of Eh during drainage course (mv)
+WARNING: Unknown sitepar record: 0.7        / zero_root_frac    - fraction CH4 emitted via bubbles when zero root biomass (0.0-1.0)
+SITE NOTE: "sand" replaced by layer data  value ignored
+SITE NOTE: "silt" replaced by layer data  value ignored
+SITE NOTE: "clay" replaced by layer data  value ignored
+SITE NOTE: "rock" replaced by layer data  value ignored
+SITE NOTE: "bulkd" replaced by layer data  value ignored
+SITE NOTE: "awilt" replaced by layer data  value ignored
+SITE NOTE: "afiel" replaced by layer data  value ignored
+SITE NOTE: "ph" replaced by layer data  value ignored
+swflag = 0
+Tminan= 0.016100  Tmaxan= 21.186001  Tamp= 21.169901
+ Setting soil profile to Tavean= 9.063558
+   Model is running... 18:24:00.112
+Opened weather file: roth.wth
+ Using only air temp for PET calc
+SnowFlag = 1;  snow insulation, around basetemp
+EOF on weather file reading 83; rewinding to 1	1	1931	1	
+EqAclrat(som3) 365/150 4000  somstrt=    3640.552 somC    3512.441  somCin,out=     455.726    -583.841 sum err:   1.369E-06  Ratio:       0.781  C/N        7.564  New    2741.688 adjust     -770.754
+EOF on weather file reading 165; rewinding to 1	1	1931	1	
+EOF on weather file reading 247; rewinding to 1	1	1931	1	
+further rewinds will be ignored
+EqAclrat(som3) 365/300 3999  somstrt=    2741.688 somC    2675.127  somCin,out=     381.921    -448.475 sum err:   2.432E-06  Ratio:       0.852  C/N        7.757  New    2278.135 adjust     -396.992
+EqAclrat(som3) 365/450 3998  somstrt=    2278.135 somC    2266.442  somCin,out=     366.879    -378.455 sum err:   5.145E-05  Ratio:       0.969  C/N        7.776  New    2197.115 adjust      -69.326
+ 365/0    SETA150I          -1
+ Parsing ACEQ comand:A150I
+ 365/150  AEQ        4000
+ 365/300  AEQ        3999
+ 365/450  AEQ        3998
+ 365/600  AEQ        3997
+EqAclrat(som3) 365/600 3997  somstrt=    2197.115 somC    2193.843  somCin,out=     362.277    -365.408 sum err:   6.448E-05  Ratio:       0.991  C/N        7.780  New    2175.043 adjust      -18.799
+writing v17 record        1  label 'broadbalk_eq.sch<-broadbalk.100' : broadbalk_eq.dsa
+Execution success. 46.835 s

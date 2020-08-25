@@ -1,0 +1,12 @@
+GM     Graze_low_intensity__moderate_(linear)_effect_on_production_MLRA
+0.1               'FLGREM'
+0.01              'FDGREM'
+0.3               'GFCRET'
+0.8               'GRET(1)'
+0.95              'GRET(2)'
+0.95              'GRET(3)'
+0.0               'GRZEFF'  #  revised - no effect  18Nov2011, 2056, Steve Williams
+0.5               'FECF(1)'
+0.9               'FECF(2)'
+0.5               'FECF(3)'
+0.25              'FECLIG'
